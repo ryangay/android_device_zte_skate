@@ -34,9 +34,14 @@ TARGET_SPECIFIC_HEADER_PATH := device/zte/skate/include
 
 # Recovery
 TARGET_PREBUILT_RECOVERY_KERNEL := device/zte/skate/recovery_kernel
-BOARD_CUSTOM_GRAPHICS := ../../../device/zte/skate/recovery/graphics.c
+#BOARD_CUSTOM_GRAPHICS := ../../../device/zte/skate/recovery/graphics.c
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/zte/skate/recovery/recovery_ui.c
 TARGET_RECOVERY_INITRC := device/zte/skate/recovery/recovery.rc
+
+# TeamWin
+DEVICE_RESOLUTION := 480x800
+TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+BOARD_HAS_FLIPPED_SCREEN := true
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/zte/zte-kernel-msm7x27
